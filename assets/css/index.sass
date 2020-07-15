@@ -1,0 +1,45 @@
+
+
+// Para usar tipografias
+
+//@font-face
+//	font-family: <nombre>
+//	src: url(ruta-del-archivo)
+
+
+//Display flex, con la clase flex-fd fda w nw
+//para usarlo:
+//@include fle-fa
+@mixin flex-fa
+	display: flex
+	-ms-align-items: center
+	align-items: center
+@mixin flex-fda
+	display: flex
+	justify-content: center
+	-ms-align-items: center
+	align-items: center
+@mixin flex-w
+	-webkit-flex-wrap: wrap 
+	-moz-flex-wrap: wrap 
+	-ms-flex-wrap: wrap 
+	-o-flex-wrap: wrap 
+	flex-wrap: wrap
+@mixin flex-nw
+	-webkit-flex-wrap: nowrap 
+	-moz-flex-wrap: nowrap 
+	-ms-flex-wrap: nowrap 
+	-o-flex-wrap: nowrap 
+	flex-wrap: nowrap
+
+body
+	font-family: 'Roboto', sans-serif
+	padding-left: 15px !important
+	padding-right: 15px !important
+
+img, video
+	max-width: 100%
+	width: 100%
+
+//Para usar responsive design
+//@media only screen and (max-width: 600px)
